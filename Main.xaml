@@ -1,0 +1,423 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="700,329" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SboqDumpDownLoad" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="bolNotLoggedin" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="484,298" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="650,877" sap2010:WorkflowViewState.IdRef="Sequence_20">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence sap2010:Annotation.AnnotationText="Here we will login into INSIDE if it is not logged in already." DisplayName="LoginIntoInsideIfRequired" sap:VirtualizedContainerService.HintSize="588,112" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[bolNotLoggedin]" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="42b455d3-f3d9-45d0-becd-9aa793989db9" InformativeScreenshot="5962242149abefcb6e53e304c39482f1" Selector="&lt;webctrl class='loginContent' parentname='login' tag='DIV' /&gt;" TimeoutMS="3000">
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
+              <If Condition="[bolNotLoggedin = true]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="If_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="492,169" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="LoginIntoInside" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'alaminul'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Text="alaminul" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/index.php" CvElementArea="649, 376, 125, 15" CvTextArea="651, 379, 35, 8" CvTextArgument="alaminull" CvType="InputBox" DesignTimeRectangle="649, 400, 125, 14" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'alaminul'" FullSelectorArgument="&lt;webctrl id='user' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='user' tag='INPUT' type='text' class='formElement' aaname='' /&gt;" Guid="cd48c1dd-ea55-4181-8b47-b2e3a6fab98e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIEAAAASCAYAAAB8Ur29AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMBSURBVGhD7Zi/b9pAFMf5s9qxa0ekjB0q1KFCHapMFVINxoRfhi6ZqnaplGwZM3SgIxmQGN0hEiTK4KEDQwaE+PHte+ezubsYEpKQVuSe9JHfLx+H35eTRabVauPetB8ZWrPp+6jXG6jW6qhWa0tqEQfVqoZaS0i570adrjX+DLP2yGz2Gdxr9tfFGvclXseMVTYTgTGwlXmzh/x2+8syr9T8Vgu+30Kj2Yw2qQ7PHKTqa7H8cjJe9WVNxIOp6/c+mAeskzaoOLcpN8XEpD+XRATO95+WZ4gQAf8KGU70ej0Mh0NcXl5angFCBHRyaSJgAUwmE8xmM8uOM51Oxcz5vSrDL2IMJ1gd3GBt922xWIiZVw4OkGk0ffFSdpsIwuMsvDMZbGQhTj8eoi+jO9mZh+xxKANr27BYBF6lQiJoNMHoIhgh+NVBh+jLWSxFcLM2vuojOB+gS7nucEzNfVEP/ogqwl5Ad8m+qxB97jvnjMyJPvYDhHS7FcH2LTkJKnQSsBIYTQTjEIPhCKNRgG9vCujwXGMRrKi9djsYiNxL5H/0EYYdFD6c0DkQ4mjPQ5dujfpOEYQDnLzP45R0oJ4w4bGHoytyrAi2btpJUPY8MJoIrgOcuHnk3uWQfZEVg0mGta5G1nWjHGXl8HURmAO3Ivg3lojAYxGUSQSEKoLB1xwOf0fN8VDjYa2rqTnKWhH8xxaLgA+AVBGMezSEtwX4bgG5V/qg19XYNhUBzo+Q3duH/2kfub28FcET2a0iEDYe0yvdCltXu49Nab2p9K09id1NBNZ22jQRuG4ZDCcuLi7EP0ncYNlt5vO5mLlbLiPjFIsQUMLy/OADIOM4JADis+MoRLkEEomZ53jpL/ucYinJryQWXlpNoq6/Lpdgrif3XCzRfmStyHsjP77yXtnnnlLJTeC4GMeuTnxyqv663EbQr1KQVtsimWi46agP1YxTkQ82ukrMuhmbuVtQ96GLT/parhT1y/py+OmYdSEQRohCF0sSKwJ5kAhiATy5CMr4C7F0DpQ3+5lrAAAAAElFTkSuQmCC" InformativeScreenshot="295f65471aee5f6eb5ca74aa103c5954.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Sydney@Aug2023'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_7" IsPassword="True" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Text="Sydney@Aug2023[k(Enter)]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/index.php" DesignTimeRectangle="926, 573, 125, 14" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBoxPassword" FriendlyName="'Sydney@Aug2023'" FullSelectorArgument="&lt;webctrl id='pass' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='pass' tag='INPUT' type='password' class='formElement' aaname='' /&gt;" Guid="7dbb2228-e7d3-4154-86c5-34d65c931403" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIEAAAASCAYAAAB8Ur29AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJZSURBVGhD7Zg9a9tQFIbvr4gzZcjvcIZ47VI8FXnM1KVLINZnDMlQOmc2ZGggQ/5AMTTQbgG1xTSGDiEJxW6gNM0UQj/y9h7JIlfSkSNZpoN0hwehe857dO7R64tt4TguymA7zkw4TWFcBS6uouZm4LoeXM+D520HV0fes7XmYNae88wjnBsfI4Leqd/kvqbxmDYjJxkvbILo5UYboofGeYjHGirDrI0URakVDTQYqoxFeyrDrD3nmcdjOQ8mSBiByQ1jimnYuDSBbcuXJen132hqCBk/ZoK3707w4fM5Po0uNFXn9II3ARng6/c7TK5/1w4hBLteVcY/fvEmIIdQwtXNfe0gE3DrVeXbz7/aBElqbQLLtkFoE9TUBPIAEJYlTSCJmeDKR29tGaLRQu/4VopuMdhpYUkso7nj45IKjY5grAqI1Q30R/I+pbnH8PUGVuRwVzpHGHIapm5Kk6OXeTTJXupqAjoAeBMc78qByQFJlrZ9KfJhNsJ70djFQBYZ7hvhvaS9P2E0E/SfTTXCQP8Lo0nVTWse72UeTboXunLDqioxE5imBSJmgpszHLxoo/l0EwfDUHRyuIkn6208PzwLC419vOy00OzsYTCmnLTm8v0ejPUWjFfTT19Kk66b0uToZR5Nspe6msC0rCwT8MIqo02gTaBNoE1QZxMkvhN8PD0P/kmiBE3Fuf4TvHP6USC60gAELWjqR2iCromFYpaEq6nCaVQ4TRJOJ6ETkVsvQnSyZsHlcmv/E7G11cVC6ZaEq7lImGeqBuHiRVBrcWTl5dUvHhP/AIYzYMi3MIXvAAAAAElFTkSuQmCC" InformativeScreenshot="92fcc16130ff083cb7ae32752f8ffff3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+            <Sequence DisplayName="SBOQDumpDownload" sap:VirtualizedContainerService.HintSize="450,1477" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="bolUploaded" />
+                <Variable x:TypeArguments="sd:DataTable" Name="datTaskList" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="ClickStartMenu" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Timeout="1000" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/index.php" DesignTimeRectangle="16, 721, 21, 11" DesignTimeScaleFactor="0.800000011920929" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl parentid='div-page-menu' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='div-page-menu' tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='' aaname=' ' /&gt;" Guid="92c8b462-4aa5-4337-ad7b-f42e8967f536" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAPCAYAAAARZmTlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALASURBVDhPrZPLSxtRFMbnn7ANTaKZPExikomaSUI0SqOI73e0gkWztg24EIqgbaiKUGvajeJS3JSoG12ILnwsFHz8UV/vd8oM0erOxY8799xzvu+eMzPaxMQEyOTkpGDtq2E8n88/2r+U+xy2STUUnJmZQaFQwOzsLKanpzE8PIzx8XFMTU3ZceYwf2xsTM5Y9xza6OgoqmHByMgIjo+P8fDwgPv7e5ycnKCjowP9/f0olUq4ubmR+PX1NZaWltDT0yOXYD1rn6INDg7iKRSjSDWmaSKXy2F9fd0257qysoJsNove3t7/dCw0Cvb19WFgYEDESXd3N25vbwWK3d3dIRqNorW1Faurq7LnGdfl5WUkk0l0dXWJjgVNCZ81jqGzs1Nga5wtW9/Z2cHR0ZGwvV1GMhXC+1wCnz4XUKn8kXHu7+9jbm5OaoeGhkSQz9SsRvP5fPD7/XLTSqWCi4sLnJ+fi0lNzRtFDT4W3uFH2aOow7fvtTDiDolzhIeHh1JD1tbWRIuaFh6PB1ogEACJx+O4vLy0C05PT/HW4YDb7cb8Qh1+KoMNZbShVjPpgMvlkltb+WR3dxfBYBD19fWiSUMxCYVCCIfDaG5uxtXVlc3Z2RmcThf8Xh8Wvviw+cuj0LH5W0c67YSu6zJzK58X3NvbQ0NDg+hRl2ZerxcagxwVOymXyzg4OJBZLy4uwl3rVol+5D941Zj8+FryoDhfh2jMKaPgV7W1tWXXFItFGIaBWCxmm7EjjcHGxkYxiUQidou6ukEwFJYCIxaRMei6iiusd2iJ0ZCdUbCpqUn0qMsc1mmJREJeYCqVktVK4mryLJlSX5aJRMJU8X9nHC1z+elW1zBOHcapa11cS6fTyGQy8g+8SPaZ2Au0tLSIHnVpym41Bjjb9vb2V6GtrU3M2M0jEwZ5+BpQi5rWGA3DwF8tI+IV7a2YZQAAAABJRU5ErkJggg==" InformativeScreenshot="a105dd07ad4cef9544a6e588fd1d7e69.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-5.light...' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="ClickProjectsMenu" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/index.php" CvTextArgument="Projects" CvType="Text" DesignTimeRectangle="59, 554, 33, 12" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Projects'" Guid="4a48822d-0769-4f88-ad18-c7646afb9260" InformativeScreenshot="71b5fbcdf88350f047b6551fcccdf50d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-5.light...' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="ClickSboqGeneratorMenu" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/index.php" CvTextArgument="SBOQ generator" CvType="Text" DesignTimeRectangle="174, 937, 92, 16" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FriendlyName="'SBOQ generator'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='15' tag='TABLE' /&gt;&lt;webctrl class='label' tableRow='6' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='label' type='' tag='TD' aaname='SBOQ generator' check:innerText='SBOQ generator' /&gt;" Guid="87bb9ca9-25f9-4162-882b-e88012b31532" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAAUCAYAAAByKzjvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHbSURBVFhH7ZhdbsMgDMc5I1IvFHGV9L3aHZLnnaEPkfIWqR8vrRgGG2xC1a3awrTxl6KA42Din51UVbapqhqAymoAKqsBqKwGoLIagMpqACqrCGDolFUKj11vp9GkuTvMiI7H3upo17Y/ot0O1pT8m4Rut1sBACQVko5TLwDQDWEcr4ckSxjGWSfb75TVe1oB/DicreXi58/zSzTP8wsAaAznzA86xxwIRNK01wxIENioQxT6p85DYC6G3pEfrcm6y8cH4G59B111bx4+9+dxzJjf6xRjbF8kHsDpdMIpEyQ3blrOhY2goCKADMwKgIAMCXTJgkSQD1wnyBiD1hi6lCiwmTEAWCWP1gBgGMvvDzs27qnwHFvJA7heLzgtCV8fB75JsIWEvdwBMTmgBIBDpm9PvA/HqUvCoffv4f7gJa8LABkoSjyPsbE8gMvlGQBMTg7An1NF+aR6Ozzok2/Asw4gcRuOeQcE4f0w5GC/0AGruBvJAzifzzhFQbKpgtxBm+Q2mXSy88QEOCt/JlnJIYHC9qAD8rVlB8hrVDS07sNvQCUA/ldQ8RvwbUrV91if8fm7Usuy4PBnRNUnqyy8pqhSSx3yX6Tu9zsOm2qo/RVRWQ1AZTUAVWXtB96VMBZhfTDoAAAAAElFTkSuQmCC" InformativeScreenshot="b6b253793fcf042b84903ed0b8ea6cb0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="ClickSboqReportMenu" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/index.php" CvTextArgument="SBOQ report" CvType="Text" DesignTimeRectangle="294, 972, 104, 16" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FriendlyName="'SBOQ report'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='24' tag='TABLE' /&gt;&lt;webctrl class='label' tableRow='4' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='label' type='' tag='TD' aaname='SBOQ report' check:innerText='SBOQ report' /&gt;" Guid="76e5f4ab-b649-4e9a-8e6e-906a89debf1f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAAUCAYAAABoF9hhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVGhD7ZVBboQwDEVzvqorpDlFL9BlNcol2j2jLmYzl2AOMguO4eYnceIEUEspi1A/CUFMcJAfDub6+U56tHMYUppChTWGCmsMFdYYKqwxVFhjzAobzoaMicepp/Fu89gd9h4nPnrqUryj/hHjNJCdm69sZioMEiApDj0Qdh7CdbofpJTyrIuO1J8MdRfOgHlS5k64d8xrHpf1wvga52oeOtPeWFxmvHRVMSHVxZxY5ML9shvLDg3PihivC0kujzFP9PLM88u1j8b8PwwyYnF8AcW4iLHESBJWiVwS5rsOH0jK46Rw96YcEGXpA7ljN6d88h0g7192WAGK5Qp7k3JCAQcUa1OHxTl+K80fQ+gQKQxzX+mNBQMWJSWpMCDk1ML8OX/16/5hlbCUm5HCwnpLHabCIEd88VwYGSslcVxKCTIn8xNCGEbiH5Y6bPK8iLHMQhLfz3mPyDcdthVXxGrb/Bm/fe747CzMld5tZeiKdduVCltid2HK36LCGkOFNYYKawqiLxm8390vDdE0AAAAAElFTkSuQmCC" InformativeScreenshot="b9086af4e1740bf6bcf496c94f60a3e4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="ClickAddFiltersButton" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/projects/sboq_report_show.php" CvTextArgument="+" CvType="Text" DesignTimeRectangle="1184, 433, 13, 13" DesignTimeScaleFactor="0.800000011920929" FriendlyName="'DIV addFilters'" FullSelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='addFilters' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='addFilters' type='' tag='DIV' class='' aaname='' /&gt;" Guid="af028a8d-5cc9-4788-9483-aeaafe65e361" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIpSURBVDhPtZHtT1JhGIf9K9sqN7+oM3uhtKmpudDcWij4gk3DpAY6MzPdfB9ZJNMQfANJbb2oJKYooeegRwSv4HQ4yuhLc11fnj33/ftdH54ny+VycVH+nyR+GuMwGuHgKMz+0S/EY4GT+ImyzSRDEkkUZjccDHgtvHA2YZqqw/yxibcrQ4QjISWVTpokKRj/1MtrTwcOvw2bf5DBtcR91YLufSVP7Q3sibtK+gxVEj+N417/wKvFduZ3nHSumGhZ0NHq02NabqB7tYOywQJ6XBaisajcSaFKDo9F+jxmXIFJzCtGDHO1bAp+DqL7aJ3FVE3dou+zldI3hWyFN+VOClWyJ+5gnW2h96sFvbuG9kUjP8UAgnSAYVJLxUQezbMPeTBchMc/L3dSqJKgsEW7s542Xz3Gxcfy7DzGmWq09hvUjJbiXnMq0z+ck2zTPFlDi+cR2pm7PJtvZlsIEImKPF9o5P5EAYbpSsoHbjK37pY7KVSJIO3TaK/G6m2lzJ5LsS2H9fAXwlIIzchlikau8tJrosCamO+uyZ0UqiQWjzG61E/FUCFdS22JN0iIxrK5M3yFkrEczHN68jsvYRjXIZ1IcieFKkkSiuzy5F0dJQN5GKdrqXfcQ2cvodGh5Xp3NprOa/wI+ZX0GWmSJEFhhy6nmfJ+DcW9+dzuyUXTnfgZmx5/aENJpZMhSSJFj+TCcsCHb9PL9+A3IpKobDP5q+RfyVLOCwC/AcwtDka2jmNdAAAAAElFTkSuQmCC" InformativeScreenshot="67df4c5b0485496be42b01c1492d1f66.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-5.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="FilterCriteriaCreatedFrom" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Text="Created from[k(Enter)]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/projects/sboq_report_show.php" CvElementArea="1029, 421, 117, 15" CvTextArea="1033, 424, 29, 10" CvTextArgument="Project" CvType="InputBox" DesignTimeRectangle="1030, 422, 115, 14" DesignTimeScaleFactor="0.800000011920929" ElementType="DropDown" FriendlyName="'Project'" FullSelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='filterType' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='filterType' type='' tag='SELECT' class='formElement' aaname='' /&gt;" Guid="c50c42ef-a4c3-4c5a-a628-3898e3049127" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAASCAYAAABhAEFjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKZSURBVGhD7Zg9a9tQFIb9QzwkOH+ia6E/IIEsAQ9BUxEZislQhCkEkyHYBIrxYNQMAWcoeAl46KCM0iBQOjlDQfIH+I4aOhjjj7fnKFe2k9SOkhiK3fvAsc89uvLgh3N1dVN4K/2+TJIjrnQUb+UAArX9Amw5eswrfl4hebvcFyNgXVj0GRPCvmjAlyPF6pjK/fLth4oNiZgHcl3XRRAEaLfbKtY0FsplsYPBAKPRSMUaxnA4XCyXzfMkxXoymUwSynXL2Mtq0A416F9t2vYkwUP5U2Nus7QMtZF6jlKpBCGe/ptcOz8/l6MZyeU6BRSc+1R81ynvQ7hNhH0B74a+uX5rwbqx4Ufm+TqNXUEZE8J3+LoHMYwKwJDvpZpD9wsbxgcNZRp7XfW+85hKpYJUKoWdnR30ej1ZRZRzja9Vq1VZvedVcv3qHuX8PvoeWqVOwppoXedgXPskibr1qEg9S3rDJsx8jTo3ROPYQCMIEQZ16HmLhHso0vusJUKIO/qNnz7MXZoT0hzl9gncnVtbW1PBPOaIxca1eV4k990uLcvZA+SumtyXDw4b7JNZPjuUoDknLNdGYd+AeWFSlGHkaan+ZUK/nF+Elx9eKIBut4tMJhPJ3N7ejoJzrs13c8yrOveehzK8UwOW7Di/qqMWcBbL9VA4bsjlWdKtQT/j/o4RqGeV3OfodDpTqbFYlv43ViYXvNwe5lA8y5E0W4qM5ZJwWra1j0Z0XSPR/CS2Tw+g5YsofqZnrUtzLmlloLHpJNuu/a+wzHQ6HS3Ti8QyyeUmoo/wt0yjTRM9V4/qkdwYdTa8Gnzfj7p4GSuWOyN0TOrSMup3yua/YqncVqsVnXLwJBXrF+PxeLFcFZsRMVO5is1Dyd1YgD/3+EvHxQX94AAAAABJRU5ErkJggg==" InformativeScreenshot="01a48ae89b682fe4b1443ec798a0a363.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="ClickDateIcon" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/projects/sboq_report_show.php" CvType="Icon" DesignTimeRectangle="1115, 450, 13, 13" DesignTimeScaleFactor="0.800000011920929" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl parentid='dateDiv' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl parentid='dateDiv' type='' tag='IMG' class='ui-datepicker-trigger' aaname='...' /&gt;" Guid="ace648a0-5971-4768-a466-9ea799524d6a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFOSURBVDhPrZQxS8NQFIXzBxzc/QFOghQcBVdXN/EHdBWEgCCSoRARzJDZpThYUnCKJqOoFMG0oiYpZOoURLChEJKmaY65z0QahRBpDxwO9777Pt5LSDgsQNzxuQ7yPOIGgwGDxHEMq/uM29ZVJevXNxkihUwmEwYJggD3R2ewanvoLW/hiauV+mSfzxApJEmSAuRdbuHzUmeZ+21153+Ql5VtWOu7BfeWNqtDFEVBo9GoZEEQMsQviGmaCIY24uFD6g4Mw2BDlPTgR6MRbNtmPUmSWJL+QLzXQ0SdNUSPG2g2m2yIMooiuK4LVVVZrxQinx7A6V4g/LgDz3/fmzIMQziOA1mWWa8UMh6PMZ1O2SJtnE3q0zqpFCKKIvr9Pqvr9ToboqR6VqWQqipA6Ig5RNM0tNvtSqbXnOvnA6QT+b4Pz/MqO9difgVZziHgC6xy5ht8WxFjAAAAAElFTkSuQmCC" InformativeScreenshot="a38c7d349f7b77fa045a2fbc01181c80.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="SetYear" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Text="2019[k(Enter)]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/projects/sboq_report_show.php" CvTextArgument="2023" CvType="Text" DesignTimeRectangle="1108, 469, 52, 13" DesignTimeScaleFactor="0.800000011920929" ElementType="DropDown" FriendlyName="'2023'" FullSelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl class='ui-datepicker-year' parentid='ui-datepicker-div' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl class='ui-datepicker-year' parentid='ui-datepicker-div' tag='SELECT' type='' aaname='' /&gt;" Guid="147b81d0-9e75-4fb9-84cf-1f0cb7652994" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAARCAYAAACIJW/gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGjSURBVEhL3ZYxrwFREIXvD1EQevVKRCMRGtmKVqVQUyr0opNQ70/xI2i2IKFRa+flnOyssdnFvle9e5IT9x4Tme/O7g23XC7FZ7v5fC4+2y0WC/HRs9mMTgF9EngmkwntLeBoNKILAVerlTjnaKxVmjebTTkejy+Zrb3f79Lr9dL8cDgwL6v1ei232y3ZPYVss9kku1eBJwxDOhfw8XjIbrfjJxodj8eEQZPT6ZQ51oApqsX6dDrx97BHjqyMttstD6fRaMj1ek1S4RoZvtvv90n6FHhwuDzgPEArNI7bCE1GUURDaFYBVbbWCnvktvYbYUrVajWFxB5WOM2yAk+73aY/AgJIH7ssIKZpp2JrIQChBidZdnqqy+Ui9XqdQLVajcYamZ2qFXiCIKDfAmYbzgLaCWZrrfIOo4zO53MKpnAAL9JXgGhWYVR57yBUVAtDv30HrQBUqVT4yL6Dg8DTarXoXEA0Ym9AWAEAg73eokW12Vxh/6I4jjnNTwJPp9OhP76D/1Hg6Xa7tLeA/X6fTgF982AwoN1wOBSf7fQvjZ8O5Qe8BlBCTiapJAAAAABJRU5ErkJggg==" InformativeScreenshot="f01b79e0bc2ee6f200173823f413d95e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1037, 470, 13, 13" ElementType="Text" FriendlyName="'Prev'" FullSelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl parentid='ui-datepicker-div' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl parentid='ui-datepicker-div' tag='SPAN' type='' class='ui-icon ui-icon-circle-triangle-w' aaname='Prev' check:innerText='Prev' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEkSURBVDhPrdKxasJwEAbwey0DwSUgZjAIpgGp1UCtQ6hL9QHqVJ+gTaZWJ3WoUROl+G5f+YT7mzg2HX7D3X138A+R6XSKqiSKIlQlYRiiKgmCAEVsTl4mmL/NDdbs32aVtNttqOHjEMuvJQ77A84/Z4M1+5wX80oajQao0+kgiZPS8m67wzE7mppz5nRHiW3boEF/gPQ7NQub1Qa9+x6Sj+thzpnTHSW1Wg00ehqZ8Ck/odlsXvrxe2z6xJzuqP85YlkWqP/Qv3wDDa9Xa3S73dIRzpnTHSX1eh3UarVK76d0myI/5KbmnDndUeI4DhQ/5OJzgWyflY6xZp/zYl4J314U3AUYP48xe50ZrNm/zSpxXRdVied5qKr02/+V+L6Panz8Aiawhb8UUuN8AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="SetMonth" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Text="Jan[k(Enter)]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/projects/sboq_report_show.php" CvElementArea="1054, 467, 53, 17" CvTextArea="1057, 470, 18, 10" CvTextArgument="Oct" CvType="InputBox" DesignTimeRectangle="1055, 469, 52, 13" DesignTimeScaleFactor="0.800000011920929" ElementType="DropDown" FriendlyName="'Oct'" FullSelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl parentid='ui-datepicker-div' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl parentid='ui-datepicker-div' tag='SELECT' type='' class='ui-datepicker-month' aaname='' /&gt;" Guid="0b23a668-ddac-47b9-af53-2f1420f73974" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAARCAYAAACIJW/gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVEhL3ZaxioNAFEXnQywSTJ/aQEgTCNqIVdJap46lhb2kE0ntL6S0y0ekShFFm9Rp33IHxziD7i7sGsgcuOh7MyDHpyILw5B0DjscDqRz2H6/JyQIAi3DfN8nBIUuCDnAttstIdoKep5HSJ/g5XIhxhjPfD6n6/XarLyPOI6pruumeoHe8XhsKhlJcLPZEKIKQma329Hj8eA1ZLFP1F2ezydFUdS79heSJOE3dzabUVVVTZf4OXpYO51OTfeFJLhcLglRBbMs4+kCCYhCHhPFBSCdpmk7aez5LzClyWTSSqJGhJzoqUiClmURogoKmS7o5XnOP7/dx3WsCYKiKMg0TS40nU55cI5ed6pdfiU4NMHz+cyPkBKMKQju93srJuQgPoQkuFgsCFEFh97BsizfOkEBhAzD4I/sd3JAElytVoSogmDoK6q+gxDDtFFDdCxutxuf5k9Iguv1mpA+wU9FErRtmxBtBR3HIUQ0dQtzXZd0Tvurpmc8+gLSeoXZVEQ4tQAAAABJRU5ErkJggg==" InformativeScreenshot="78f49be6f8663e48ded9f5d2d85b77cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1037, 470, 13, 13" ElementType="Text" FriendlyName="'Prev'" FullSelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl parentid='ui-datepicker-div' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl parentid='ui-datepicker-div' tag='SPAN' type='' class='ui-icon ui-icon-circle-triangle-w' aaname='Prev' check:innerText='Prev' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEkSURBVDhPrdKxasJwEAbwey0DwSUgZjAIpgGp1UCtQ6hL9QHqVJ+gTaZWJ3WoUROl+G5f+YT7mzg2HX7D3X138A+R6XSKqiSKIlQlYRiiKgmCAEVsTl4mmL/NDdbs32aVtNttqOHjEMuvJQ77A84/Z4M1+5wX80oajQao0+kgiZPS8m67wzE7mppz5nRHiW3boEF/gPQ7NQub1Qa9+x6Sj+thzpnTHSW1Wg00ehqZ8Ck/odlsXvrxe2z6xJzuqP85YlkWqP/Qv3wDDa9Xa3S73dIRzpnTHSX1eh3UarVK76d0myI/5KbmnDndUeI4DhQ/5OJzgWyflY6xZp/zYl4J314U3AUYP48xe50ZrNm/zSpxXRdVied5qKr02/+V+L6Panz8Aiawhb8UUuN8AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="ClickDate" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/projects/sboq_report_show.php" CvTextArgument="1" CvType="Text" DesignTimeRectangle="1073, 507, 16, 15" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FriendlyName="'1'" FullSelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl parentid='ui-datepicker-div' tag='TABLE' /&gt;&lt;webctrl class='ui-state-default' tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl parentid='ui-datepicker-div' tag='TABLE' /&gt;&lt;webctrl class='ui-state-default' type='' tag='A' aaname='1' check:innerText='1' /&gt;" Guid="97ddb5bf-3375-4320-b85e-c83c888fe4ea" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVDhP7dJNCoAgEIbh7q7nEkVw49I7+IteYcLASBhIpto18IJ8i2flBi/fN6Bz7nHDOcHWGrkfXAdrrSClBGvttJNBYwxwzkFrPe1ksNexJdB7v5QQ4ui6oWAIYakBXjcUjDHeppQCxthRf48dBVNK5FAw50wOBUsp5FCwf1pqKPi0CXzvAHar84j3kmwU0gAAAABJRU5ErkJggg==" InformativeScreenshot="54ad5beb9d7f884af2ffad96f0b817e9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="20" DisplayName="ClickApplyFilters" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/projects/sboq_report_show.php" CvType="Button" DesignTimeRectangle="1184, 391, 13, 13" DesignTimeScaleFactor="0.800000011920929" FriendlyName="'DIV applyFilters'" FullSelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='applyFilters' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='applyFilters' type='' tag='DIV' class='' aaname='' /&gt;" Guid="06845ce0-6279-4ab8-bb3d-2e1831b98246" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI9SURBVDhPtZL7T1JhHIf9K2urNjdrmmVWXlrYxRZp5LzfUJSSFNKcFzJBJ1roBCYmSctL4vIGoihIgSJgT4cTHMfsl1o923c72/v9PHs/704G/4D/J4mf/ODbYZS94KEwYQ5CR8TiJ8nTs2TY7fbk5y8OQscM2VzIdTbym8e4Xm+gRD1Bt8mBL/A9uZVOmiQQitA05KC43Uyt/qM4NYMOqoW50WDgUesAO/vB5PYpkiRRQW/5wh21GY1pgQedVgraJ7ndNolMM02LwUlOzVtae01EYzExk0KSBMMRHmutdIwtUNg+RZ7yPVcbJ8huGEfRO4v81QxdE4vkVg2w6d0TMykkyZYviEzoXqt3cFNlpkRjIbf5HQ+7bKx5g6x4ApT1zFBQP8jsZ5eYSSFJNrx+ipVGSrU2scrylp8B6yor7gCe/RAVfR+4JkiL6vqwOhbFTApJsilICpuGxeVC4S1sS9tEjmOEI1HhYee4VDnKvZcW8qtfY3cui5kUksQv/A/FLSO0DM9zpX6cW6pJphc8Yr3zCoMwRtqMTq6UdfJ1yytmUkiSWDxOxxsz2VV6VMZPXK4zcaFihHNPDeItqvvnuFjeh0KpE24YFTMpJEmC3f0DZDWdZCl6Ke+2cbdjmiL1FHKthcyyHrJllWx4dpPbp6RJEmz7/DTqDOQ905JVqiLzvpIc+Quqnvez7t5JbqVzRpLg8CjCmtDbubTK/KIL17qbUPgoeXqW30r+lIxS9Sh/M080JnRjc7h9QX4CD8j19/t6KawAAAAASUVORK5CYII=" InformativeScreenshot="e369c6a4a74a0c7972a3f9595d6b708d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="ClickSettingIcon" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/projects/sboq_report_show.php" CvType="Icon" DesignTimeRectangle="1187, 794, 13, 13" DesignTimeScaleFactor="0.800000011920929" ElementType="Icon" FriendlyName="'IMG settings'" FullSelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl id='settings' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='settings' type='' tag='IMG' class='' aaname='More options' /&gt;" Guid="13d8f9b2-8f31-4566-98a5-d3997760f03c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIiSURBVDhPrZL9T1JRGMf7h2urWaS9Eq2mCSGgQqTmBAW6QCKEiAO5YmI0e5mwohhOpVRMbrwqb9+ec9a9I/gt+2x3d3fnOZ/7PN9zLuGCWCwW/H9Ju91BpX6OZquFvaMi9K4osgcFnDWaKNfO+HovfZLjYhlT/k2E335GKJGGZjqIRfEThMg2xoUYCrTeiyJpdzo4LdWQ+/ETZm8cJkGE1bcB86s4Jtzr0M6vQu+MIJ07xIlU+asjRXJaqmKSNlvomQslYV9JwuQWMWJnm6OY9MRhcMWgpe8nc2H8qtS5gKFI2LwzgQSMwhpsJNA6Ilj/mEWJisPJL3j0Ypl3o7YGYPaIqFJuMookX5AQ2krDQu2bqP307iEvkNlK7UL93I/71iUsb+7w4GUUiZFC08wEeds6R5QvdsPGHRz3YmjCi4GxlyjSt4wiyewfYyH8jst0NEpm74gXyLzP7OOmUYCKBLP+N6ifN/6sdEkazRYCGzsYtoV5oA+nX+OARmTkvp/gtnkRKoOAq6Pz8MU+8HoZRSKVaxil4B7PhqCjNzsFlsE9ymDI6MaNMReuaRdw/akTt8Y9vF5GkTRbbWTzBaxtZ6CZCuCu2Yc79PdBkxsDtPHKsI3eDqwkUvwGs3oZRSLDsnhAEiud0jOviMsjdhgdqzDQo9K78I2y66VPwmZlIZaqdXylDWqrD6lsnl93kbrszkKmT/IvOJ3Oi0kkSUIwGMRvOTgD2RkhudIAAAAASUVORK5CYII=" InformativeScreenshot="2d04754b9bc48e40a2007c7e7dad2da2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/projects/sboq_report_show.php" CvTextArgument="Export" CvType="Text" DesignTimeRectangle="1057, 724, 136, 18" DesignTimeScaleFactor="0.800000011920929" ElementType="ListItem" FriendlyName="'Export'" FullSelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl id='export_xls' parentid='jqContextMenu' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iframe_webui_projects_sboq_report_show' tag='IFRAME' /&gt;&lt;webctrl id='export_xls' parentid='jqContextMenu' tag='LI' type='' class='' aaname=' Export' check:innerText='Export' /&gt;" Guid="ba6cbda3-1e74-464f-8ab8-34e7a1131877" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIwAAAAWCAYAAAASPXQbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOKSURBVGhD7ZlfTFNXHMd9981X35Ylvmi2JSaLyeLf+uLceGHL3IMmRmecKxlEl8kIKjKNUUGuWyP6MN3cFLpYLpXYpkxLp2vBrtUNpAVloIZiaVacGLLQ9rNz7y5Y2G6h/mPD82l+6b2n59yX+8n3/O7tHCSSPNCFCQaDsmRNWROEkUhyMSaNFEYyLaYUJpPJkM6k/1lprVL6cUZ8JC8GOYTJ8MfIED3xKF2xDiL9v9J+J8z13quEbgVo6/oRf+clAp0+4skBXSzJ7MdUGE2AW/cieNob+bnHT6g3wJXIRTzXG/GEGnGHHJz76RS7v/4Yb8ilp81kYo4iLBZLVhWhDhg/PjExYk/tWpLpkkOYNN0DnfiizXQnooTuBumL9zI8Mky0P0Jbt5+2aCuKvRJPq5OUiTDKM2qLnuW1JeaYCqP1JjdFwrjbndj8Ryh1F1F2fju13i+xqpt5qWQ+h9QqahsO4gmcz0OYGKrVYoyHUbTUaVYoqhGlp5AiRh/N05PJqoozQVDMsWqpVU75U08syXTIKUz77TDeDjddgxFq/QqlrmI2nHqPgi/WUNmwl7uJO1R/twvX5QZTYSZsSWM3XhdFQakxxBEiTJDCIbYbsVb71hg/1ubVGDrJhJkRcgqjNbiea07R/N7nmN/G+6cL2WxfzzvHCqiwl+HruMTBrz7D7VPz35Kybv6YJDoDqkibMOGarPQwxrLnSWFmhtzC/HaVxtazHHVV8WbVUiyVS7AceIO1JyzM+2Au5XVlNFXv5Jems6RT+QgjEkYkipqdMJPkGU8VwfixFGbGySlMqCfAyRYbh+v3s2P/NvYd3c2nxz/ho+p32bJxIfuKCwl/uI7bn5eSGn5grHyEdlMnbEmilKDRt+jpkdXD6L2JNmeKHsYQRpdM9jDPHXNh0mmu3PiBM94T3Ev2M/QwycNknJEWN/Ht2xgsXMtgwSr6Vr7GzeWv0ld/2lj5GGSLIPlPYy6MSBj/jRYqvinhiL0Cm3h89u7ZSt3by9i54hVKVi3CvmwhocUv07R4Aba3VhsrHwMpzP8GU2G01/3aG1xf2IO71Ylq20Vz8SZc3x5HddfhuHiOluINnFzxOrXWrVx2fG+slMxmTIXR0P9HEluT9gT051CSB4kEo6Oj+rk23nPBSaD+DL8nBkn9S9MrmX3kFEYimYwURpIXUhhJXkhhJHkhhZHkxd/CBPkLsi534s1cyhUAAAAASUVORK5CYII=" InformativeScreenshot="b3375475fec740fa56ea333f75275ebd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence sap2010:Annotation.AnnotationText="In this sequece we will logout from INSIDE only if it was logded before the process started." DisplayName="LogoutFromInsideIfRequired" sap:VirtualizedContainerService.HintSize="588,493" sap2010:WorkflowViewState.IdRef="Sequence_19">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If Condition="[bolNotLoggedin = true]" sap:VirtualizedContainerService.HintSize="526,351" sap2010:WorkflowViewState.IdRef="If_1">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="492,169" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="LogoutFromInside" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/index.php" CvElementArea="9, 712, 34, 24" CvTextArea="15, 718, 20, 12" CvTextArgument=",%" CvType="Button" DesignTimeRectangle="16, 721, 21, 11" DesignTimeScaleFactor="0.800000011920929" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl parentid='div-page-menu' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='div-page-menu' tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='' aaname=' ' /&gt;" Guid="dba6c345-910b-4d2f-b98c-302394429068" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAPCAYAAAARZmTlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALASURBVDhPrZPLSxtRFMbnn7ANTaKZPExikomaSUI0SqOI73e0gkWztg24EIqgbaiKUGvajeJS3JSoG12ILnwsFHz8UV/vd8oM0erOxY8799xzvu+eMzPaxMQEyOTkpGDtq2E8n88/2r+U+xy2STUUnJmZQaFQwOzsLKanpzE8PIzx8XFMTU3ZceYwf2xsTM5Y9xza6OgoqmHByMgIjo+P8fDwgPv7e5ycnKCjowP9/f0olUq4ubmR+PX1NZaWltDT0yOXYD1rn6INDg7iKRSjSDWmaSKXy2F9fd0257qysoJsNove3t7/dCw0Cvb19WFgYEDESXd3N25vbwWK3d3dIRqNorW1Faurq7LnGdfl5WUkk0l0dXWJjgVNCZ81jqGzs1Nga5wtW9/Z2cHR0ZGwvV1GMhXC+1wCnz4XUKn8kXHu7+9jbm5OaoeGhkSQz9SsRvP5fPD7/XLTSqWCi4sLnJ+fi0lNzRtFDT4W3uFH2aOow7fvtTDiDolzhIeHh1JD1tbWRIuaFh6PB1ogEACJx+O4vLy0C05PT/HW4YDb7cb8Qh1+KoMNZbShVjPpgMvlkltb+WR3dxfBYBD19fWiSUMxCYVCCIfDaG5uxtXVlc3Z2RmcThf8Xh8Wvviw+cuj0LH5W0c67YSu6zJzK58X3NvbQ0NDg+hRl2ZerxcagxwVOymXyzg4OJBZLy4uwl3rVol+5D941Zj8+FryoDhfh2jMKaPgV7W1tWXXFItFGIaBWCxmm7EjjcHGxkYxiUQidou6ukEwFJYCIxaRMei6iiusd2iJ0ZCdUbCpqUn0qMsc1mmJREJeYCqVktVK4mryLJlSX5aJRMJU8X9nHC1z+elW1zBOHcapa11cS6fTyGQy8g+8SPaZ2Au0tLSIHnVpym41Bjjb9vb2V6GtrU3M2M0jEwZ5+BpQi5rWGA3DwF8tI+IV7a2YZQAAAABJRU5ErkJggg==" InformativeScreenshot="a105dd07ad4cef9544a6e588fd1d7e69.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log out...'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://insideworld.ceragon.com/au/webui/index.php" CvTextArgument="Log out..." CvType="Text" DesignTimeRectangle="58, 683, 88, 27" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FriendlyName="'Log out...'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl class='label' tableRow='14' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='label' type='' tag='TD' aaname='Log out...' check:innerText='Log out...' /&gt;" Guid="698b07f9-bff0-4b2a-8fb8-4fbf2c4abe8b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAfCAYAAABqI6qaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFUSURBVGhD7ZlBboMwEEXnjEi5EOISOQBRFt1UvQNZ9wyRYIPYsEGC4Np4nGCKRJu2f1H+kyYa24ORnh0jhBgChcLBUDgYCgdD4WBkHEdNCQIKByO3201TgoDCwcgwDJoSBBQORvq+15QgWNnhhckks7/kL1jZ4Tjh1Skx2UUbO+FLwp0YEZkiCCpS357ikJvKdytujnisSBOTX/2oF/25Zg9sC7/mJrkL0bFLZiQNFbZvIcwtRlgYJzc5VSvCucOVhfBIbmXygxX3mk0SPUvhWqNyw/UU7tl+aP7aDo/7lsIf47MFi+79P1h503RS9WzV8/Xdignth5S4JpYymyOMOXmhz8Y0T+izNW97Ef7jFx8n5b7byRbSdZ2m32H+L5id12QTadtWU4JAmqbRlCCQsiw1JQikrmtNCYInH5rkWfjVHgyFg6FwMBQORl7OR8NAxdF8ALSmSLGw/JqMAAAAAElFTkSuQmCC" InformativeScreenshot="8c87a932122616911bb3a2a17ec69436.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-6.light...' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <ui:FindImageMatches Matches="{x:Null}" DisplayName="Find Image Matches 'chrome.exe INSIDE'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="FindImageMatches_2">
+                        <ui:FindImageMatches.Image>
+                          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                        </ui:FindImageMatches.Image>
+                        <ui:FindImageMatches.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="4ec9d23d-73a3-4d15-9b9d-1bcbf9794c8e">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:FindImageMatches.Target>
+                      </ui:FindImageMatches>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="30" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="10836b3f-1495-487c-a74f-cfe7cc8ae7da" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="755, 163, 68, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;ctrl name='insideworld.ceragon.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='insideworld.ceragon.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' automationid='' check:fulltext='OK' /&gt;" Guid="9cdaf013-bf5d-49eb-9f3a-870e12cdcc0b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAkCAYAAAAq23xmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALHSURBVGhD7ZpNaxNBGMf9HH4BvagIUg+CePIL9FCIX6B3BQ9CfaEievCiYI1HD6UFIUouItUq1IPWogSN2D2FHLpJkyZxm83m7XH+MzubZyfiLWNh5w9/+sxLssyPmWeynTlGTv9UCtDr7z26/HCfTtzw6fjVvUwZY8bY3/zoxTSUEkCPN4K/fjCLfrJ5GFOJAb37GcmGM7dqtP45JL8zko1ZEsaMsYMBWHz4Fcl6CWhhpSkrX34NqfgtpIv39xOaWTHGjLGDAcpXnjUngE7GOSfojejSg+zB0cbYm8FYxmdv1yaAdAceZ9WcAeQAGeYMIAfIMGcAOUCGOQPIATLMGUAOkGHOAHKADHMG0H8A1KR8eUCtvnyc0IgqXkCLy7q9S7uituV1VHk5oG30bYSUS33PbAzx2DKgGuWrY/GUEe2WArr+vE2Pdvrki5rQ78YAOKAGrfmif39Aa3nzu2ZjiMd2Aa32JIzKjnq10Z77iCkypu0iyhNAuU8DCgXMrYJ6P7JhiMdWAc2XhuIJYjYky0lbQfHLB0ncqkZUwV8Bai7Vd7aGeGwV0JI3IupGtDTV1qGtrl5WCpDSkAqWlpY2xGOrgBbL8QyaalNQKqVGEre80Gpy1oZ4bDcHFSORU6Zz0LzINZgtb1dR1oDE0ipE1NIx6z9LQzy2C0jvSnwXK4ktX9SE1SCGMAGEXU8uSyTwDTuJGuKxZUDCyweU94YSipL6HTRZRhwQyio/2drqIR7bB3TEzRlADpBhzgBygAxzBpADZJgzgBwgw5wB5AAZ5gwgB8gwZwA5QIY5A0gCOnVT/UrFoZk7OFQHh6cFkwTQwlP1bvQqPnq+cK+e+mAWbB495/Ls6JlfXnjxJaT67+xdXthrq8sLmDlgkbq8AK1sHiY0s+78e+P6i5bnD+naepvO3bH3L86j4vN363LsYMCVAuRkiugPm4bKxb/wbVoAAAAASUVORK5CYII=" InformativeScreenshot="4026db4ea8fdf6b7b1646677b1934255.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='INSIDE CERAGON » Al-aminul Islam @ 172-11-10-5.light... - Google*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="0fd62f0f8b653cee9234c2845b758e36.png" Selector="&lt;html app='chrome.exe' url='https://insideworld.ceragon.com/au/index.php' /&gt;" Title="New Tab" Url="https://insideworld.ceragon.com/au/index.php" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
